@@ -1,9 +1,7 @@
 # Slack notifier for Nagios
 
 ## What is this
-
-## How to create slack bot
-
+It is custom plugin for Nagios which will help you to push notifications from Nagios to Slack
 ## How to setup
 ```
 git clone 
@@ -34,4 +32,8 @@ define contact {
     host_notification_command           notify-host-by-slack
     ...
 }
+```
+Restart Nagios
+```
+service nagios restart
 ```
